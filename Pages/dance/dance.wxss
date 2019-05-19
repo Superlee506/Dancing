@@ -1,0 +1,98 @@
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+
+.video {
+  margin: 50px auto;
+  width: 100%;
+  height: 300px;
+}
+
+.score-board {
+  width: 200rpx;
+  height: 96rpx;
+  margin: 0 auto;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+}
+.score {
+  width: 200rpx;
+  height: 96rpx;
+  margin: 0 auto;
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  right: 0;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Paytone One";
+   color: #ffb945; 
+  text-align: center; /*让div内部文字居中*/
+}
+
+.cam {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.back {
+  width: 80rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.clock {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+.flash {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+.time-counter {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 40%;
+  /* right: 5%; */
+  margin:0 auto;
+  left: 0;
+  right: 0;
+}
+
+.circle-box {
+  text-align: center;
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+  height: 100px;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.cam-btn {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50rpx;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}

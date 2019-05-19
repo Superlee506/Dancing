@@ -1,0 +1,37 @@
+<view class='wrapper'>
+  <canvas canvas-id="myCanvas" class='{{isShowCanvas ? "canvas" : "canvas hidden"}}' bindtap='saveImg'/> 
+    <text>Pages/result/result.wxml</text>
+    <view class="container">
+      <video 
+        src="{{vedio}}"
+        controls="{{false}}"
+        style="width: 100%; height: 100%;position:absolute;top:0;left:0"
+        enable-progress-gesture="{{true}}"
+        objectFit="cover"
+        loop=true
+        autoplay=false 
+        id="myVideo" 
+      ></video>
+  </view> 
+
+  <cover-view class='{{isShowMask ? "mark2" : "mark2 hidden"}}'> 
+    <cover-image src="{{maskUrl}}" class='mark_img' bindtap="playBack"></cover-image>  
+    <cover-image src="{{resultUrl1}}" class='result_img result_img1'></cover-image>
+    <cover-image src="{{resultUrl2}}" class='result_img result_img2'></cover-image>
+    <cover-view class='score'>{{currentScore}}</cover-view>
+    <cover-view class='result_comment'>{{resultComment}}</cover-view>
+  </cover-view>
+  <cover-view class='buttons'>
+    <cover-view class="replay_btn_url" bindtap='back'>
+      <cover-image src='{{replayBtnUrl}}' style="width: 172rpx; height: 74rpx;"></cover-image>
+    </cover-view>
+
+    <cover-view class="share_btn_url"  bindtap='share'>
+      <cover-image src='{{shareBtnUrl}}' style="width: 172rpx; height: 74rpx;"></cover-image>
+    </cover-view>
+    
+    <cover-view class="pick_btn_url"  bindtap='pick'>
+      <cover-image src='{{pickUrl}}' style="width: 290rpx; height: 84rpx;"></cover-image>
+    </cover-view>
+  </cover-view>    
+</view>

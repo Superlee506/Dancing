@@ -1,0 +1,44 @@
+.header{
+  width: 100%;
+  margin-bottom: -10rpx;
+  position: relative;
+}
+.header_background{
+  width: 100%;
+}
+.videos{
+  widows: 100%;
+}
+.video_box{
+  float: left;
+  width: 33.33%;
+  height: 350rpx;
+}
+.video_box video{
+  width: 100%;
+}
+.buttons{
+  width:100%;
+  position: absolute;
+  bottom: 13rpx;
+}
+.button{
+  height: 65rpx;
+  width: 50%;
+  float: left;
+  text-align: center
+}
+.active{
+  border-bottom: 10rpx solid rgb(255,185,69);
+}
+.button image{
+  height: 60rpx;
+  width: 190rpx;
+}
+.hidden{
+  display: none
+}
+.battle{
+  margin-top: 60rpx;
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+<view class="swiper-tab">  
+    <!-- <view>
+    <image src='/imgs/hyh.png'></image>
+    </view> -->
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+      <image class='swiper-img' src='/imgs/logo1@3x.png'></image>
+      热门达人
+    </view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+      <image class='swiper-img' src='/imgs/logo2@3x.png'></image>
+      好友关注
+    </view> 
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange" scroll-y="false">  
+    <swiper-item style='position: absolute; width: 100%; transform: translate(0%, 0;overflow-y="auto"'> 
+      <view style="height: 100%;">
+        <block wx:for="{{videoUrls}}" wx:key="key">
+           <view class="dance-card" id="videoCard_{{index}}" hidden="{{showCardBoolArr[index]}}">
+              <video id="shortVideo_{{index}}" src="{{item}}" class='dance-video-card' autoplay='' loop='true' muted='' show-center-play-btn='' enable-progress-gesture="" controls="" objectFit='fill' custom-cache="{{false}}" ></video> 
+              <cover-view class='animation-view' bindtouchstart="touchStart" bindtouchend="touchEnd" bindtap="doubleTap"></cover-view> 
+              <cover-view class='dance-card-btn-board'>
+                <cover-image class='dance-card-btn-board-img' src="../../imgs/功能框蒙版.png"/>
+                <cover-view class='dance-card-btn' bindtap="pkBtnEvent">
+                  <cover-image class="dance-card-btn-img" src="../../imgs/pk.png"/>
+                </cover-view>
+                <cover-view class='dance-card-btn' bindtap="changeSpeedBtnEvent">
+                  <cover-image class="dance-card-btn-img" src="../../imgs/man-running.png"/>
+                </cover-view>
+                <cover-view class='dance-card-btn' bindtap="shareBtnEvent">
+                  <cover-image class="dance-card-btn-img" src="../../imgs/share-archive.png"/>
+                </cover-view>
+              </cover-view>
+              <cover-view class="{{showView?'dance-speed-btn-board-show':'dance-speed-btn-board-hide'}}">
+                <cover-view class='dance-speed-btn' bindtap="changeSpeed" data-speedId='0.5'>X 0.5</cover-view>
+                <cover-view class='dance-speed-btn' bindtap="changeSpeed" data-speedId='0.8'>X 0.8</cover-view>
+                <cover-view class='dance-speed-btn' bindtap="changeSpeed" data-speedId='1.0'>X 1.0</cover-view>
+              </cover-view>
+              <view class='next-video' id="{{index}}" bindtap="nextBtnEvent">
+                <image class='next-video-btn' src='../../imgs/group@3x.png'></image>
+              </view>
+            </view>   
+        </block>
+      </view>
+    <cover-image class='upload-tag' src='../../imgs/上传.png'></cover-image>
+    <cover-image src="../../imgs/like.png" animation="{{popAnimation}}" class="like" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtap="doubleTap"></cover-image>
+    </swiper-item>
+</swiper>
+
+<cover-image class='onboarding' src="{{boardingUrls[boardingUrlIndex]}}" hidden="{{hideBoarding}}" bindtap="changeBoardingEvent"></cover-image>
+<block wx:if="{{boardingUrlIndex == 3}}">
+  <cover-image class='pk-cancel-btn' bindtap='cancelPK' src='../../imgs/learnBtn.png'></cover-image>
+  <cover-image class='pk-ok-btn' bindtap='confirmPK' src='../../imgs/pkBtn.png'></cover-image>
+</block>
+
+
+
+

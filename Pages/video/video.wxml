@@ -1,0 +1,13 @@
+<!--Pages/vedio/video.wxml-->
+<view class="container">
+    <video 
+      src="{{vedio}}"
+      controls="{{false}}"
+      style="width: 100%; height: 100%;position:absolute;top:0;left:0"
+      enable-progress-gesture="{{true}}"
+      objectFit="cover"
+      loop=true
+      autoplay=false 
+      id="myVideo" 
+    ></video>
+</view> 

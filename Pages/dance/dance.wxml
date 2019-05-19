@@ -1,0 +1,23 @@
+<view class="page-body" style="background:black;height:100%">
+  <view class="page-body-wrapper">
+    <camera device-position="{{cameradirection}}" flash="{{isClickFlash==true? 'on':'off'}}" binderror="error" style="width: 100%; height: 100%;position:absolute;top:0;left:0"></camera>
+
+      <block wx:if="{{videoUrl != ''}}">
+        <video id="shortVideo" src="{{videoUrl}}" style="width: 247.5rpx; height: 450.6rpx; position:absolute; bottom:0rpx; left:0rpx" autoplay='' show-play-btn='' show-center-play-btn='' enable-progress-gesture="" controls="" objectFit='fill' muted=''></video>
+        <!-- <cover-image class="score-board" animation="{{popAnimation}}" src='../../imgs/tab-logo.png'></cover-image> -->
+        <cover-view id='markView' animation="{{popAnimation}}" class="score">{{scoreStr}}</cover-view>
+        
+        
+        <view class="circle-box" >
+          <audio hidden='true' src="{{audioUrls[audioIndex]}}" id="myAudio" ></audio>
+          <canvas class="circle" style="width:100px; height:100px;" canvas-id="canvasArcCir"></canvas>
+        </view>
+        <cover-image bindtap="takePhoto" class="cam-btn"  src="{{'../../imgs/camBtn.png'}}" ></cover-image>
+        <cover-image class="cam" bindtap="changeCameraDirection" src="{{isClickCam==true ? '../../imgs/cam_on.png':'../../imgs/cam.png'}}"></cover-image>
+         <cover-image class="back" bindtap="backHomePage" src="../../imgs/backBtn.png"></cover-image>
+        <cover-image class="clock" bindtap="openClock" src="{{isClickClock==true ? '../../imgs/clock_on.png':'../../imgs/clock.png'}}"></cover-image>
+        <cover-image class="flash" bindtap="openFlash" src="{{isClickFlash==true ? '../../imgs/flash_on.png':'../../imgs/flash.png'}}"></cover-image>
+        <cover-image class="time-counter" src="{{timerUrl}}" hidden="{{isClickRecord==false? true:false}}"></cover-image>
+      </block>
+  </view>
+</view>

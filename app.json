@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "Pages/home/home",
+    "Pages/dance/dance",
+    "Pages/mine/mine",
+    "Pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "爱Dou舞",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#ffb945",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "Pages/home/home",
+        "iconPath": "imgs/pick@3x_off.png",
+        "selectedIconPath": "imgs/pick@3x_on.png",
+        "text": "Pick达人"
+      },
+      {
+        "pagePath": "Pages/mine/mine",
+        "iconPath": "imgs/invalidName@3x_off.png",
+        "selectedIconPath": "imgs/invalidName@3x_on.png",
+        "text": "我"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+.swiper-tab{  
+    width: 100%;  
+    /* border-bottom: 2rpx solid #777777;   */
+    text-align: center;  
+    box-shadow: 0px 2px 5px #888888;
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #777777; 
+    line-height:80rpx; 
+    height:80rpx;
+}  
+.on{ 
+  color: #da7c0c;  
+    /* border-bottom: 5rpx solid #da7c0c; */
+    }  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+} 
+.swiper-img{
+  width: 30rpx;
+  height:60rpx;
+  vertical-align: middle;
+  margin: 10rpx auto;
+  display: inline-block;  
+} 
+.dance-card{
+  width:549rpx;
+  height: 907.2rpx;
+  margin: 20rpx auto;
+  /* border:0.5px solid; */
+  border-radius:5px;
+  box-shadow: 0px 1px 2px #888888;
+  position: absolute;
+  left:0; right:0; top:0; bottom:0;
+}
+.dance-video-card{
+  width: 100%; 
+  height: 100%; 
+  position:relative; 
+  float:left;
+  border-radius:5px;
+}
+.upload-tag{
+  position: fixed ! important; 
+  right: 0rpx; 
+  top: 20rpx;
+  width: 100rpx;
+  height: 50rpx;
+}
+.dance-card-btn-board{
+  left: 455rpx; 
+  top: -308rpx; 
+  width: 94rpx;
+  height: 308rpx;
+  /* background: gray; */
+  position: relative;
+  /* border-radius:5px; */
+  /* opacity: 0.6 */
+}
+.dance-card-btn-board-img{
+  width: 108%;
+  height: 103%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dance-card-btn{ 
+  width: 94rpx;
+  height: 100rpx;
+  position: relative;
+}
+.dance-card-btn-img{ 
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 70%;
+  height: 70%;
+}
+.dance-speed-btn-board-show{
+  left: 141rpx; 
+  top: -495rpx; 
+  width: 300rpx;
+  height: 60rpx;
+  background: lightgray;
+  position: relative;
+  border-radius:1px;
+  display: block;
+}
+.dance-speed-btn-board-hide{
+  display: none;
+}
+.dance-speed-btn{ 
+  display: inline-block; 
+  line-height: 60rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  width: 100rpx;
+  height: 60rpx;
+  position: relative;
+}
+.next-video{
+  position: absolute;
+  bottom: -90rpx;
+  width: 100%;
+  height:90rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.next-video-btn{
+  width: 80rpx;
+  height:80rpx;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+.onboarding{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pk-cancel-btn{
+  position: absolute;
+  width: 180rpx;
+  height: 90rpx;
+  top: 650rpx;
+  left: 180rpx;
+  /* background-color: red; */
+    /* opacity: 0;   */
+}
+.pk-ok-btn{
+  position: absolute;
+  width: 180rpx;
+  height: 90rpx;
+  top: 650rpx;
+  right: 180rpx;
+  /* background-color: green; */
+   /* opacity: 0;  */
+}
+.like{
+  width: 200rpx;
+  height: 190rpx;
+  margin: 0 auto;
+  position: absolute; 
+  top: 40%;
+  left: 0;
+  right: 0;
+  opacity: 0; 
+}
+.animation-view{
+  width:549rpx;
+  height: 907.2rpx;
+  margin: 20rpx auto;
+  position: absolute;
+  /* background-color: red;  */
+  left:0; right:0; top:0; bottom:0;
+}

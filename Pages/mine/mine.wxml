@@ -1,0 +1,34 @@
+<view class='header'>
+  <image src="{{headerUrl}}" class="header_background"></image>
+  <view class='buttons'>
+    <view class='{{ currentTab==2 ? "button" : "button active"}}'>
+      <image src='../../imgs/mine/btn1.png'></image>
+    </view>
+    <view class='button'  
+      class='{{ currentTab==1 ? "button" : "button active"}}' bindtap='changeTab2'>
+      <image src='../../imgs/mine/btn2.png'></image>
+    </view>
+  </view>
+</view>
+<view class='{{ currentTab==1 ? "videos" : "videos hidden"}}'>
+  <view  wx:for="{{videos}}" wx:for-item="item" class='video_box' bindtap='watchVideo' data-video='{{item.url}}'>
+     <video 
+      src='{{item}}'
+      duration='{{3000}}'
+      loop=true
+      muted=true
+      controls='{{false}}'
+      autoplay=true
+      objectFit="cover"
+    ></video> 
+  </view>
+</view>
+
+<view class='{{ currentTab==2 ? "battle" : "battle hidden"}}'>
+  你目前还没试过斗舞哦
+</view>
+
+
+
+
+

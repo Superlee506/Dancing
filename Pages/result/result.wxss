@@ -1,0 +1,92 @@
+/* Pages/result/result.wxss */
+.wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.mask{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.6);
+}
+
+.mark2{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px; 
+}
+.mark2 .mark_img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* top:0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px; */
+}
+.mark2 .result_img{
+  width:196rpx;
+  height: 324rpx;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+.mark2 .result_img1{
+  margin-left: -200rpx;
+}
+.mark2 .result_img2{
+  margin-left: 5rpx;
+}
+.score{
+  width: 100%;
+  text-align: center;
+  color:rgb(255,185,69);
+  font-size: 136.8rpx;
+  font-family: "Paytone One";
+  position: absolute;
+  top:18%;
+}
+.result_comment{
+  font-size: 36rpx;
+  font-family: "SourceHanSansSC-Bold";
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  
+  text-align: center;
+}
+.buttons{
+  width: 680rpx;
+  position: absolute;
+  bottom:2.8%;
+  left: 50%;
+  margin-left: -340rpx;  
+  overflow: auto;
+}
+.buttons .replay_btn_url{
+  margin-top: 6rpx;
+  float: left
+}
+.buttons .share_btn_url{
+  margin-top: 6rpx;
+  float: left
+}
+.buttons .pick_btn_url{
+  float: right
+}
+.hidden{
+  display: none
+}
+.canvas{
+  position: absolute; 
+  width:425px; 
+  height:625px;
+  top: 1000px
+}
